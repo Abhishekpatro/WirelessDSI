@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "Line in: "$(bc<<<"scale=3; $(wdt -g vin)/1000")"V;  Battery: "$(bc<<<"scale=3; $(wdt -g vbat)/1000")"V;  Voltage to Pi: "$(bc<<<"scale=3; $(wdt -g vrasp)/1000")V
